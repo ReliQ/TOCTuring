@@ -1,0 +1,44 @@
+/**
+ *	TOCTuring
+ *	A Theory of Computation Assignment
+ *
+ * 	@author Patrick Reid
+ * 	@link http://www.reliqartz.com
+ */
+html, body {margin: 0; padding: 0;} 
+body {background: lavender; font-family: Arial; font-size: 16px; width: 100%;}
+header, footer {background: #331212; color: #f1f1f1; ; padding: 10px 6px;}
+header {font-weight: bold; font-size: 21px; min-height: 20px}
+footer {font-size: 13px; text-align: right;}
+a {color: #333312;}
+a:hover {color: #558866;}
+h1 {font-size: 20px;}
+h2 {font-size: 18px;}
+ul {list-style-type: square;}
+li.error {color: #773333;}
+li.success {color: #337733;}
+section#in {background: #fefefe; padding: 10px;}
+form {}
+	form div {margin: 15px 0; width: 100%}
+	form label {font-size: .8em; width: 10%;}
+		form .radio span {font-size: .8em;}
+#conclusion {}
+	#conclusion .success {color: #116622;}
+	#conclusion .failure {color: #ff2211;}
+#display {background: #1e1e1e; color: #fff; font-family: 'Segoe UI Light'; font-size: 2em; overflow-x: auto; margin: 10px 0 5px; letter-spacing: 1px; padding: 5px;}
+	#display mark {border-radius: 2px; padding: 0 1px;}
+#wrapper {margin: 5% auto 10px; max-width: 800px; height: 260px;}
+	#wrapper > section {float: left; height: 100%; width: 400px;}
+	#wrapper section#control {}
+	#wrapper section#screen {background: #eee; border-right: 2px solid #331212; box-sizing: border-box; -moz-box-sizing: border-box; padding: 10px;}
+		#wrapper section#screen h2{font-size: 12px; font-weight: normal;}
+		#wrapper section#screen p{background: #333; color: #eee; font-size: 12px; height: 80%; line-height: 1.2; padding: 0 5px; overflow-y: scroll;}
+			#wrapper section#screen .r{color: #11f433;}
+			#wrapper section#screen .i{color: #11eeee;}
+			#wrapper section#screen .e{background: #111; color: #ff1111;}
+			#wrapper section#screen .s{color: #aeae12;}
+			#wrapper section#screen .a{background: #111; color: #11ff11;}
+#intro {background: rgba(255,255,255,.34);}
+	#intro p {line-height: 1.5; text-align: justify;}
+	#intro aside {float: right; font-size: .8em;}
+.clr {clear: both;}
