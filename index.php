@@ -33,7 +33,7 @@
 						<label for="input">Input:</label>
 						<input type="text" name="input" maxlength="15" placeholder="TAPE" />
 						<label for="lag">Lag:</label>
-						<input type="number" name="lag" maxlength="5" min="0" style="width: 50px;" value="300" />
+						<input type="number" name="lag" maxlength="5" min="0" style="width: 50px;" value="90" />
 					</div>
 					<div class="radio">
 						<label for="do">Check for:</label>

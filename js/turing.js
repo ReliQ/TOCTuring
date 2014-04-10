@@ -32,8 +32,8 @@ function allowOnlyAlphabet() {
 	   var string = tape.val();
 	   var patt = "^["+alphabet+"]*$";
 	   if ( !string.match(patt) && string.length > 0 ) {
-	      tell(string.substring(string.length-1, string.length) 
-	      	+ " revoked.");
+	      tell("Character '" + string.substring(string.length-1, string.length) 
+	      	+ "' not allowed.");
 	      tape.val(string.substring(0, string.length-1));
 	   }
 	});
@@ -56,6 +56,9 @@ function simulate() {
 		} else if (choice == "pali"){
 			isPalindrome();
 		}
+	} else {
+		display.show("fast");
+		display.html("Please enter a word.");
 	}
 }
 
@@ -77,7 +80,7 @@ function tell(string) {
 		string = '<span class="i">'+string+'</span>';
 	} else if (string.indexOf('START') >= 0 || string.indexOf('DONE') >= 0) { 
 		string = '<span class="s">'+string+'</span>';
-	} else if (string.indexOf('REJECTED') >= 0) { 
+	} else if (string.indexOf('REJECTED') >= 0 || string.indexOf('not allowed') >= 0) { 
 		string = '<span class="e">'+string+'</span>';
 	} else if (string.indexOf('ACCEPTED') >= 0) { 
 		string = '<span class="a">'+string+'</span>';
@@ -451,7 +454,7 @@ function isPalindrome() {
 								if (string.charAt(at) != "x") {
 									var atNow = string.charAt(at);
 									if (!done) {
-										tell("Attempting to cross off " + atNow);
+										tell("Attempt to cross off " + atNow + "...");
 									}
 									if(currentFocus == atNow) {
 										string = changeI(string, at,"x");
@@ -468,7 +471,7 @@ function isPalindrome() {
 
 							}
 						} else {
-							tell("RSNF!");
+							console.log("RightSideNoFocus!");
 						}
 						// ---------------------------------
 					}
